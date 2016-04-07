@@ -1,0 +1,76 @@
+use Modern::Perl;
+
+my ($userInput, $largest, $smallest); # declare more than one variable at a time
+
+print("\nThis program takes six integers from the user, and \ndetermines which numbers
+    are the largest and smallest, \nthen outputs the results to the screen as
+    Largest:Smallest.\n"); # explain to the user what is does, needs, etc.
+
+print "Please enter first number: ";
+
+chomp ($userInput = <>);
+$largest = $userInput; # largest weâve seen so far
+$smallest = $userInput; # smallest weâve seen so far
+
+print "Please enter second number: ";
+
+chomp ($userInput = <>);
+if ($userInput > $largest)
+{
+$largest = $userInput;
+}
+if ($userInput < $smallest)
+{
+$smallest = $userInput;
+}
+
+
+print "Please enter third number: ";
+
+chomp ($userInput = <>);
+if ($userInput > $largest)
+{
+$largest = $userInput;
+}
+if ($userInput < $smallest)
+{
+$smallest = $userInput;
+}
+
+print "Please enter fourth number: ";
+
+chomp ($userInput = <>);
+if ($userInput > $largest)
+{
+$largest = $userInput;
+}
+if ($userInput < $smallest)
+{
+$smallest = $userInput;
+}
+
+print "Please enter fifth number: ";
+
+chomp ($userInput = <>);
+if ($userInput > $largest)
+{
+$largest = $userInput;
+}
+if ($userInput < $smallest)
+{
+$smallest = $userInput;
+}
+
+print "Please enter sixth number: ";
+
+chomp ($userInput = <>);
+if ($userInput > $largest)
+{
+$largest = $userInput;
+}
+if ($userInput < $smallest)
+{
+$smallest = $userInput;
+}
+
+print "\n$largest:$smallest\n"; #must be set off with a blank line above and below
